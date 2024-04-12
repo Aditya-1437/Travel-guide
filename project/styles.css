@@ -1,0 +1,339 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Love+Light&display=swap');
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+hr{
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+    background-color: black;
+    height: 3px;
+}
+.nav{
+    font-family: "Love Light", cursive;
+    background-color: whitesmoke;
+    /* font-size: 24px; */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .logo{
+    display: flex;
+    align-items: center;
+}
+.nav img{
+    width: 40px;
+}
+.nav h3{
+    color: #b35e39;
+    margin-left: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.nav h3 span{
+    color: #473d3a;
+}
+.nav .items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .items a{
+    width: 100px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #b35e39;
+    position: relative;
+}
+.nav .items p{
+    /* margin-left: 15px; */
+}
+.nav .items a::before{
+    content: '';
+    background-color: #473d3a;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: scale(0);
+    transition: .3s ease;
+}
+.nav .items a:hover,
+.nav .items a:hover::before{
+    transform: scale(1);
+}
+.nav .items input{
+    padding-left: 5px;
+    align-items: center;
+    margin-left: 10px;
+    color: black;
+    width: 50%;
+    height: 20px;
+    border-radius: 10px;
+    border: 2px solid #b35e39;
+    transition: .3s;
+}
+.nav .items input:hover{
+    border: 2px solid #473d3a;
+}
+/* .hero{
+    background-image: url(images/hero2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+} */
+.hero{
+    position: relative;
+    /* font-family: "Tilt Neon", sans-serif; */
+    font-family: "Love Light", cursive;
+    display: flex;
+    
+    /* justify-content: center; */
+}
+.hero .image img{
+    width: 100%;
+    height: 90vh;
+    flex: 33.33%;
+    padding: 0 5px;
+}
+.hero .image.two img{
+    float: right;
+    flex: 33.33%;
+    padding: 0 5px;
+}
+.hero .content{
+    background-color: #f3f3f3;
+    flex: 33.33%;
+    justify-content: left;
+    padding: 0 5px;
+}
+.hero .content h1{
+    /* padding: 20px 25% 0; */
+    font-size: 72px;
+    font-weight: 800;
+    color: #b35e39;
+}
+.hero .content span{
+    color: #473d3a;
+}
+.hero .content .intro{
+    font-family: "Genos", sans-serif;
+    padding: 30px 0;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.hero .content h3{
+    font-family: "Genos", sans-serif;
+    color: #b35e39;
+    padding: 10px 50px;
+}
+
+/* .hero .content input{
+    font-family: "Genos", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #b35e39;
+    color: #b35e39;
+    background-color: white;
+}
+.hero .content input:hover{
+    background-color: #b35e39;
+    color: white;
+} */
+.hero .content button{
+    background-color: white;
+    font-size: 20px;
+    margin: 0 50%;
+    border: none;
+}
+.hero .content button:hover{
+    color: #b35e39;
+}
+.hero .content .book{
+    background-color: white;
+    width: 100%;
+    height: 110px;
+    border-radius: 10px;
+}
+.hero .content .book h4{
+    text-align: center;
+    font-family: "Genos", sans-serif;
+    font-size: 20px;
+}
+.hero .content .book .detail{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+.hero .content .book .detail .from{
+    background-color: #f3f3f3;
+    width: 33.33%;
+    height: 60px;
+    text-align: center;
+}
+.hero .content .book .detail .from h5{
+    font-size: 20px;
+    color: #fe3c52;
+}
+.hero .content .book .detail .from select{
+    font-family: "Genos", sans-serif;
+    font-size: 16px;
+    width: 60%;
+    height: 30px;
+    color: #b35e39;
+    border: 1px solid #b35e39;
+    border-radius: 10px;
+}
+.hero .content .book .detail .from input{
+    font-family: "Genos", sans-serif;
+    font-size: 16px;
+    width: 60%;
+    height: 30px;
+    color: #b35e39;
+    border: 1px solid #b35e39;
+    border-radius: 10px;
+}
+.hero .content h2{
+    margin-top: 50px;
+}
+.wonder h2 span{
+    color: #b35e39;
+    font-family: "Genos", sans-serif;
+}
+.wonder h2{
+    font-size: 50px;
+    text-align: center;
+    margin: 50px 0;
+}
+.wonder{
+    font-family: "Love Light", cursive;
+    margin: 5px;
+}
+.wonder .wonder-item{
+    border-radius: 5px;
+    /* border: 2px solid #473d3a; */
+    background-color: #f3f3f3;
+    padding: 5px;
+    display: flex;
+    margin: 20px 0;
+    padding: 50px 0;
+}
+.wonder .wonder-item .deal span{
+    color: #473d3a;
+}
+.wonder .wonder-item .deal h4{
+    color: #b35e39;
+    font-size: 42px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.wonder .wonder-item .deal p{
+    font-family: "Genos", sans-serif;
+    margin: 10px 0;
+}
+.wonder .wonder-item img{
+    width: 250px;
+    /* height: 100px; */
+    border-radius: 5px;
+    /* border: 5px solid #b35e39; */
+    margin: 0 5px;
+}
+.wonder .wonder-item .deal{
+    height: fit-content;
+    padding: 30px 70px;
+    align-items: center;
+    justify-content: center;
+}
+.wonder .wonder-item .deal button{
+    width: 100%;
+    height: 30px;
+    font-family: "Genos", sans-serif;
+    font-size: 20px;
+    border: 1px solid #b35e39;
+    color: #b35e39;
+}
+.wonder .wonder-item .deal button i{
+    margin-left: 10px;
+}
+.wonder .wonder-item .deal button:hover{
+    background-color: #b35e39;
+    color: #f3f3f3;
+}
+.package h2 span{
+    color: #b35e39;
+    font-family: "Genos", sans-serif;
+}
+.package h2{
+    font-size: 50px;
+    text-align: center;
+    margin: 50px 0;
+}
+.package{
+    font-family: "Love Light", cursive;
+    margin: 5px;
+}
+/* .package table{
+    border: 1px solid #473d3a;
+    border-collapse: collapse;
+} */
+.package table{
+    width: 100%;
+}
+.package th{
+    font-size: 24px;
+    color: #b35e39;
+}
+.package th, td{
+    font-family: "Genos", sans-serif;
+    padding: 20px 0;
+    font-size: 20px;
+    text-align: center;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+.foot{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #473d3a;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 0 10px; */
+}
+.foot h3{
+    font-family: "Genos", sans-serif;
+    margin: 0 10px;
+}
+.foot .ref{
+    display: flex;
+    justify-content: space-between;
+}
+.foot .ref a{
+    text-decoration: none;
+    color: #b35e39;
+    margin-left: 20px;
+    transition: .5s ease;
+}
+.foot .ref a:hover{
+    text-decoration: underline;
+}
